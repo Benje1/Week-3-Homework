@@ -24,16 +24,16 @@ class Game:
             if p2_input == "paper":
                 return None
             elif p2_input == "rock":
-                return f"Player 2 wins"
-            elif p2_input == "scissor":
                 return f"Player 1 wins"
+            elif p2_input == "scissor":
+                return f"Player 2 wins"
         elif p1_input == "scissor":
             if p2_input == "scissor":
                 return None
             elif p2_input == "paper":
-                return f"Player 2 wins"
-            elif p2_input == "rock":
                 return f"Player 1 wins"
+            elif p2_input == "rock":
+                return f"Player 2 wins"
 
 
 

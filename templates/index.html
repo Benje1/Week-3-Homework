@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <title>Roshambo</title>
-</head>
+{% extends "base.html" %}
+{% block content %}
+
 <body>
     <header>
         <h1>Welcome to <b>Ro</b>-<b>Sham</b>-<b>Bo</b></h1>
@@ -18,7 +12,20 @@
         <br>
         <b>Rock, Paper or Scissors</b>
         <br>
-        Once chosen, Player 1 will input their choice into the URL, followed by a '/' and then Player 2's choice.
+        Please seclect from the drop box below
     </section>
+    <form action="input_p1">
+    <label for="input_p1"></label>
+    <select name="input_p1" id="input_p1">
+        <option value="rock">Rock</option>
+        <option value="paper">Paper</option>
+        <option value="sicssor">Scissor</option>
+    </select>
+    <button>Submit</button>
+</form>
+
+
+
+
 </body>
-</html>
+{% endblock %}

@@ -1,18 +1,18 @@
 import random
 
 class Game:
-    def __init__ (self, _player1, _player2):
+    def __init__ (self, _player1):
         self.player1 = _player1
-        self.player2 = _player2
+        # self.player2 = _player2
     
-    def roshambo(self, p1_input, p2_input):
-        # p2_input = random.randint(1,3)
-        # if p2_input == 1:
-        #     p2_input = "rock"
-        # elif p2_input == 2:
-        #     p2_input = "paper"
-        # elif p2_input == 3:
-        #     p2_input = "scissor"
+    def roshambo(self, p1_input):
+        p2_input = random.randint(1,3)
+        if p2_input == 1:
+            p2_input = "rock"
+        elif p2_input == 2:
+            p2_input = "paper"
+        elif p2_input == 3:
+            p2_input = "scissor"
         if p1_input == "rock":
             if p2_input == "rock":
                 return None
